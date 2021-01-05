@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去掉自带样式 */
+        h3{
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+
+        /* 设置样式 */
+        .wrap{
+            width: 280px;
+            margin: 0 auto;/* 盒子水平居中 */
+        }
+        .title{
+            font: 18px/57px "微软雅黑";
+            color: #333;
+        }
+        .list{}
+        .items{
+            padding-left: 9px;
+            border-left: 2px solid #e2e2e2;
+            margin-bottom: 5px;
+        }
+        .pic{
+            padding: 7px 0 5px;
+        }
+        .items:hover{
+            background-color: #f8f8f8;
+            border-color: #00c38e;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h3 class="title">美国院校排名</h3>
+        <ul class="list">
+            <li class="items">
+                <div class="pic"><img src="images/sc1.png" alt="pic"></div>
+            </li>
+            <li class="items">
+                <div class="pic"><img src="images/sc2.png" alt="pic"></div>
+            </li>
+            <li class="items">
+                <div class="pic"><img src="images/sc1.png" alt="pic"></div>
+            </li>
+            <li class="items">
+                <div class="pic"><img src="images/sc1.png" alt="pic"></div>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+    <div class="wrap">
+        <h3>IT培训课程</h3>
+        <ul>
+            <li><a href="#">互联网营销培训</a></li>
+            <li><a href="#">互联网营销培训</a></li>
+            <li><a href="#">互联网营销培训</a></li>
+            <li><a href="#">互联网营销培训</a></li>
+            <li><a href="#">互联网营销培训</a></li>
+            <li><a href="#">互联网营销培训</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="wrap">
+        <h3>热门推荐</h3>
+        <ol>
+            <li><a href="#">哈佛女神</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ol>
+    </div>
+</body>
+</html>

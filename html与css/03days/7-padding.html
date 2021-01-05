@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .box1{
+            padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 20px;
+        }
+        .box2{
+            background-color: pink;
+            padding: 10px;/* 元素的上、右、下、左各有10像素的内填充 */
+            padding: 10px 20px;/* 元素的上、下各有10像素，左、右各有20像素内填充 */
+            padding: 10px 20px 30px;/* 元素的上10像素，左右各有20像素，下30px的内填充 */
+            padding: 10px 20px 30px 40px;/* 元素的上10px、右20px、下30px、左40像素的内填充 */
+        }
+
+        .wrap{
+            width: 1000px;
+            height: 500px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <hr>
+    <div class="wrap">
+        <div class="box3">box3</div>
+    </div>
+</body>
+</html>

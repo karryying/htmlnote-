@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+            border-width: 100px;
+            border-style: solid;
+            border-color: red green blue pink;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+            border: 100px solid;
+            border-color: red green blue pink;
+        }
+
+        .box3{
+            width: 0;
+            height: 0;
+
+            font-size: 0;/* IE6-会解析出来默认的字号和行高，导致盒子被撑开 */
+            line-height: 0;
+
+            border-top: 100px solid red;
+            border-right: 100px solid green;
+            border-bottom: 100px solid blue;
+            border-left: 100px solid pink;
+        }
+        .box4{/* 向下三角 */
+            width: 0;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+
+            border-top: 100px solid red;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+        }
+
+        .box5{/* 向上三角 */
+            width: 0;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+
+            border-bottom: 100px solid blue;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <hr>
+    <div class="box3"></div>
+    <hr>
+    <div class="box4"></div>
+
+    <div class="box5"></div>
+
+</body>
+</html>

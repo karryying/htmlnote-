@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1"><!-- 表格容器，用来定义表格 -->
+        <tr><!-- 表格的行，必须嵌套在table内部 -->
+            <th>表头单元格</th><!-- 默认文字加粗，水平、垂直居中显示 -->
+            <th>单元格</th>
+        </tr>
+        <tr>
+            <td>单元格</td>
+            <td>普通单元格</td><!-- 默认水平居左，垂直居中显示 -->
+        </tr>
+    </table>
+    <!-- 复杂表格的语法 -->
+    <table border="1">
+        <caption>表格标题</caption><!-- 在表格中水平居中显示，只在表格中有意义 -->
+        <thead><!-- 表格的头，放置标题之类的内容，内部必须要有tr标签 -->
+            <tr>
+                <th>表头单元格</th>
+                <th>单元格</th>
+            </tr>
+        </thead>
+        <tbody><!-- 表格的正文，放置表格数据 -->
+            <tr>
+                <td>单元格</td>
+                <td>普通单元格</td>
+            </tr>
+        </tbody>
+        <tfoot><!-- 表格的脚注，放置脚注之类的内容 -->
+            <tr>
+                <td>单元格</td>
+                <td>单元格</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
