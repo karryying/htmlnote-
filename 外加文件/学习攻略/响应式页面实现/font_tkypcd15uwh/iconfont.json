@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "51506018",
+      "name": "注销",
+      "font_class": "zhuxiaologout10",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "51506019",
+      "name": "下拉箭头",
+      "font_class": "xialajiantou",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "51506020",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "51506021",
+      "name": "U",
+      "font_class": "U",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "51506022",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "51506023",
+      "name": "订单管理16x16",
+      "font_class": "dingdanguanli",
+      "unicode": "e735",
+      "unicode_decimal": 59189
+    },
+    {
+      "icon_id": "51506025",
+      "name": "管理员",
+      "font_class": "guanliyuan",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "51506027",
+      "name": "商品管理",
+      "font_class": "shangpinguanli",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "51506735",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    }
+  ]
+}
