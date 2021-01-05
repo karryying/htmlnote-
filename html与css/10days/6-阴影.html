@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow: auto;
+        }
+        .wrap div{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            border: 2px solid;
+            margin: 200px 0 0 200px;
+        }
+        .box1{
+            box-shadow: 200px 0 0 red;
+            box-shadow: -200px 0 0 red;
+        }
+        .box2{
+            box-shadow: 0 200px 0 red;
+            box-shadow: 0 -200px 0 red;
+        }
+        .box3{
+            box-shadow: 0 0 20px red;
+        }
+        .box4{
+            box-shadow: 0 0 0 55px red;
+        }
+        .box5{
+            box-shadow: 0 0 20px red inset;
+        }
+        .box6{
+            box-shadow: 0 0 20px red inset,
+                        0 0 20px blue;
+        }
+        .wrap2{
+            background: tomato;
+            overflow: auto;
+        }
+        .wrap2 p{
+            float: left;
+            margin-left: 200px;
+            font-size: 50px;
+            font-weight: bold;
+            color: #fb755de8;
+        }
+        .txt1{
+            text-shadow: 0 0 10px #000;
+        }
+        .txt2{
+            text-shadow: 200px 0 0 #000;
+            text-shadow: -200px 0 0 #000;
+        }
+        .txt3{
+            text-shadow: 0 50px 0 #000;
+            text-shadow: 0 -50px 0 #000;
+        }
+        .txt4{
+            text-shadow: 2px 0 0 #000,
+                         0 2px 0 #000,
+                         -2px 0 0 #fff,
+                         0 -2px 0 #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+    <hr>
+    <div class="wrap2">
+        <p class="txt1">文字阴影</p>
+        <p class="txt2">文字阴影</p>
+        <p class="txt3">文字阴影</p>
+        <p class="txt4">文字阴影</p>
+    </div>
+</body>
+</html>

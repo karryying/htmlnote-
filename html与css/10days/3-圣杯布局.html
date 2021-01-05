@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap>div{
+            min-height: 200px;
+        }
+        .wrap{
+            padding: 0 300px 0 200px;
+        }
+        .wrap .center{
+            width: 100%;
+            background: red;
+
+            float: left;
+
+        }
+        .wrap .left{
+            width: 200px;
+            background: pink;
+
+            float: left;
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+        .wrap .right{
+            width: 300px;
+            background: tomato;
+
+            float: left;
+            margin-left: -300px;
+            position: relative;
+            right: -300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="center">内容内容</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

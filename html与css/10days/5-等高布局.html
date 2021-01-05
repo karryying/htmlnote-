@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .wrap>div{
+            min-height: 200px;
+        }
+        .wrap .left{
+            width: 200px;
+            background: lightblue;
+            float: left;
+
+            padding-bottom: 10000px;
+            margin-bottom: -10000px;
+        }
+        .wrap .center{
+            width: 700px;
+            background: red;
+            float: left;
+
+            padding-bottom: 10000px;
+            margin-bottom: -10000px;
+        }
+        
+        .wrap .right{
+            width: 300px;
+            background: lightgreen;
+            float: left;
+
+            padding-bottom: 10000px;
+            margin-bottom: -10000px;
+        }
+
+        .clearfix{
+            *zoom: 1;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .wrap2{
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .wrap2 .leftBg{
+            background: pink;
+        }
+        .wrap2 .centerBg{
+            background: red;
+
+            position: relative;
+            left: 300px;
+        }
+        .wrap2 .rightBg{
+            background: lightblue;
+
+            position: relative;
+            left: 700px;
+        }
+        .wrap2 .left{
+            width: 300px;
+            min-height: 200px;
+            float: left;
+
+            margin-left: -1000px;
+        }
+        .wrap2 .center{
+            width: 700px;
+            min-height: 200px;
+            float: left;
+
+            margin-left: -700px;
+        }
+        .wrap2 .right{
+            width: 200px;
+            min-height: 200px;
+            float: left;
+        }
+
+        .wrap3{
+            /* width: 1200px; */
+            /* margin: 0 auto; */
+            overflow: hidden;
+        }
+        .wrap3 .leftBg{
+            background: pink;
+        }
+        .wrap3 .centerBg{
+            background: red;
+
+            position: relative;
+            left: 25%;/* 移动左侧盒子宽度 */
+        }
+        .wrap3 .rightBg{
+            background: lightblue;
+
+            position: relative;
+            left: 60%;/* 中间盒子的宽度 */
+        }
+        .wrap3 .left{
+            width: 25%;
+            min-height: 200px;
+            float: left;
+
+            margin-left: -85%;/* 左侧盒子+中间盒子宽度 */
+        }
+        .wrap3 .center{
+            width:60%;
+            min-height: 200px;
+            float: left;
+
+            margin-left: -60%;/* 中间盒子的宽度 */
+        }
+        .wrap3 .right{
+            width: 15%;
+            min-height: 200px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 利用内外间距相抵消，父元素设置overflow:hidden; 实现 -->
+    <div class="wrap">
+        <div class="left">左侧</div>
+        <div class="center">中间内容</div>
+        <div class="right">右侧</div>
+    </div>
+    <hr>
+    <!-- 利用内容撑开父元素的特点，实现等高布局 -->
+    <div class="wrap2">
+        <div class="leftBg"><!-- 左侧盒子背景 -->
+            <div class="centerBg"><!-- 中间盒子背景 -->
+                <div class="rightBg clearfix"><!-- 右侧盒子背景 -->
+                    <div class="left">左侧</div>
+                    <div class="center">中间内容</div>
+                    <div class="right">右侧</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="wrap3">
+        <div class="leftBg">
+            <div class="centerBg">
+                <div class="rightBg clearfix">
+                    <div class="left">左侧</div>
+                    <div class="center">中间内容</div>
+                    <div class="right">右侧</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
