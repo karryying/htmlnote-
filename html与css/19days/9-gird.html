@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 1000px;
+            height: 400px;
+            background: yellow;
+
+            display: grid;
+            grid-template-rows: repeat(3,100px);
+            grid-template-columns: repeat(3,100px);
+        }
+        .wrap div{
+            border: 1px solid;
+        }
+        .wrap div:nth-child(1){
+            justify-self: start;
+        }
+        .wrap div:nth-child(2){
+            justify-self: end;
+        }
+        .wrap div:nth-child(3){
+            justify-self: center;
+        }
+        .wrap div:nth-child(4){
+            justify-self: stretch;
+        }
+        .wrap div:nth-child(5){
+            align-self: start;
+        }
+        .wrap div:nth-child(6){
+            align-self: end;
+        }
+        .wrap div:nth-child(7){
+            align-self: center;
+        }
+        .wrap div:nth-child(8){
+            align-self: stretch;
+        }
+        .wrap div:nth-child(9){
+            /* 水平居中，垂直居下 */
+            place-self: end center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3*3网格布局 -->
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    
+</body>
+</html>

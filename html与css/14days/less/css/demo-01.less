@@ -1,0 +1,136 @@
+@charset "utf-8";
+// @import "reset.css";
+// @import url("reset.css");
+@import url(reset.css);
+// 单行注释
+/* 标准css注释 */
+.box{
+    width:100px;
+    height: 100px;
+    background: red;
+    background:yellow;
+}
+
+// 变量
+// 作为属性值
+@col: #f00;
+.box2{
+    color: @col;
+}
+//作为属性名
+@wi: width;
+.box2{
+    @{wi}: 200px;
+    height: 200px;
+    background: yellow;
+}
+// 作为选择名称
+@bo: box;
+.@{bo}{
+    @{wi}: 300px;
+}
+
+// 混入类名
+.fo{
+    color: blue;
+}
+.fo2(){
+    font-size: 30px;
+    line-height: 40px;
+}
+.box2{
+    .fo;
+    .fo2;
+}
+
+// 混入参数没有设置默认值
+.fo3(@radius){
+    border-radius: @radius;
+}
+.box2{
+    .fo3(20px);
+    // .fo3();
+}
+// 混入参数并设置了默认值
+.fo4(@bol: bold){
+    font-weight: @bol;
+}
+.box2{
+    .fo4;
+    .fo4(400);
+}
+// 使用@arguments 来引用所有传入参数
+.bor(@bw,@bs,@bc){
+    border: @arguments;
+}
+.box2{
+    .bor(10px, solid, #000);
+}
+.bor2(@bwi:5px, @bst: solid,@bcl:red){
+    border: @arguments;
+}
+.box2{
+    .bor2;
+    .bor2(20px);
+    .bor2(20px, dotted);
+    .bor2(20px, dotted, blue);
+    // .bor2(dashed);
+}
+
+// 选择器嵌套
+.wrap{
+    background: pink;
+    > h3{
+        font-size: 30px;
+        color: blue;
+    }
+    div{
+        background: yellow;
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    ul{
+        background: lightblue;
+        li{
+            a{
+                display: block;
+                &:hover{
+                    color: green;
+                } 
+            }
+        }
+    }
+}
+
+// 继承
+.fontSt{
+    font-size: 30px;
+    line-height: 40px;
+    color: @col;
+    font-weight: bold;
+}
+.box3{
+    p{
+        &:extend(.fontSt);
+    }
+}
+.box4:extend(.fontSt){
+    font-style: italic;
+}
+
+// 运算
+@he: 200px;
+@col0: #000;
+.box4{
+    width: (200px + 100) * 2;/* 600px */
+    height: @he * 2;/* 400px */
+    // background: @col0 + 300;
+    background: @col;
+
+    width: calc(100% - 20px);
+    width: calc(~"100% - 20px");
+}

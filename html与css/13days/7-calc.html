@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .box{
+            /* width: calc(100px + 100px); */
+            width: calc(100px +100px);/* 语法错误 */
+            width: calc(100px+100px);/* 语法错误 */
+            height: 200px;
+            background: red;
+        }
+        .box2{
+            width: calc(1000px - (100px + 100px) * 2);
+            height: 200px;
+            background: pink;
+        }
+
+        /* .wrap width:500px,除去子盒的宽，剩下宽度为100px */
+        .wrap{
+            width: 500px;
+            background: yellow;
+        }
+        .wrap div{
+            width: calc(500px - 100px);
+            min-height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="wrap">
+        <div></div>
+    </div>
+</body>
+</html>

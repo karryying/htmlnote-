@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import url(reset.css);
+/* 标准css注释 */
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  background: yellow;
+}
+.box2 {
+  color: #ff0000;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+}
+.box {
+  width: 300px;
+}
+.fo {
+  color: blue;
+}
+.box2 {
+  color: blue;
+  font-size: 30px;
+  line-height: 40px;
+}
+.box2 {
+  border-radius: 20px;
+}
+.box2 {
+  font-weight: bold;
+  font-weight: 400;
+}
+.box2 {
+  border: 10px solid #000000;
+}
+.box2 {
+  border: 5px solid #ff0000;
+  border: 20px solid #ff0000;
+  border: 20px dotted #ff0000;
+  border: 20px dotted #0000ff;
+}
+.wrap {
+  background: pink;
+}
+.wrap > h3 {
+  font-size: 30px;
+  color: blue;
+}
+.wrap div {
+  background: yellow;
+}
+.wrap div h3 {
+  font-size: 25px;
+}
+.wrap div p {
+  font-size: 20px;
+}
+.wrap ul {
+  background: lightblue;
+}
+.wrap ul li a {
+  display: block;
+}
+.wrap ul li a:hover {
+  color: green;
+}
+.fontSt,
+.box3 p,
+.box4 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #ff0000;
+  font-weight: bold;
+}
+.box4 {
+  font-style: italic;
+}
+.box4 {
+  width: 600px;
+  /* 600px */
+  height: 400px;
+  /* 400px */
+  background: #ff0000;
+  width: calc(80%);
+  width: calc(100% - 20px);
+}

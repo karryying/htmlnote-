@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow: hidden;
+            background: yellow;
+        }
+        .wrap div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 100px 0 0 100px;
+
+            transition: transform 1s;/* 过渡属性 */
+        }
+        .wrap:hover div:nth-child(1){
+            transform: translate(100px,0);/* 向右移动 */
+            transform: translate(-100px,0);/* 向左移动 */
+            transform: translateX(100px);
+            transform: translateX(-100px);
+        }
+        .wrap:hover div:nth-child(2){
+            transform: translate(0, 100px);/* 向下移动 */
+            transform: translate(0, -100px);/* 向上移动 */
+            transform: translateY(-100px);
+        }
+        .wrap:hover div:nth-child(3){
+            transform: translate(-50px,-50px);
+        }
+        .wrap:hover div:nth-child(4){
+            transform: translate(100px);/* 沿着水平方向位移 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+        <div>box10</div>
+    </div>
+</body>
+</html>

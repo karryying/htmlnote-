@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            background: yellow;
+        }
+
+        .wrap div:first-child{
+            height: 100px;
+            background-color: pink;
+        }
+        .wrap div:last-child{
+            height: 100px;
+            background: red;
+        }
+        .wrap div:nth-child(3){
+            height: 100px;
+            background: lightgreen;
+        }
+        .wrap div:nth-child(odd){
+            height: 50px;
+            background: orange;
+        }
+        .wrap div:nth-child(even){
+            height: 50px;
+            background: tomato;
+        }
+        .wrap div:nth-child(2n+1){
+            height: 50px;
+            background-color: lightblue;
+        }
+        .wrap div:nth-child(2n){
+            height: 50px;
+            background: gold;
+        }
+        .wrap div:nth-child(3n){
+            height: 50px;
+            background: pink;
+        }
+        .wrap div:nth-last-child(3){
+            height: 100px;
+            background: red;
+        }
+        .wrap div:nth-last-child(odd){
+            height: 100px;
+            background: blue;
+        }
+        .wrap div:nth-last-child(2n){
+            height: 100px;
+            background: lightpink;
+        } 
+        
+        .wrap2 p:nth-of-type(3){
+            height: 50px;
+            background: red;
+        }
+        .wrap2 p:nth-of-type(2n){
+            height: 50px;
+            background: tomato;
+        }
+        .wrap2 p:nth-of-type(odd){
+            height: 50px;
+            background: lightblue;
+        }
+        .wrap2 p:nth-last-of-type(1){
+            height: 100px;
+            background: red;
+        }
+        .wrap2 p:nth-last-of-type(2n){
+            height: 100px;
+            background: #f0f;
+        }
+        .wrap2 p:nth-last-of-type(even){
+            height: 50px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p></p>
+    <div></div>
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+    </div>
+    <div class="wrap2">
+        <h3>title3</h3>
+        <p>内容1</p>
+        <p>内容2</p>
+        <p>内容3</p>
+        <h3>title3</h3>
+        <p>内容4</p>
+        <p>内容5</p>
+        <p>内容6</p>
+    </div>
+</body>
+</html>

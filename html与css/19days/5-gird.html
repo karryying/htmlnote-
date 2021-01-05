@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 1000px;
+            height: 400px;
+            display: grid;
+            grid-template-rows: repeat(3,100px);
+            grid-template-columns: repeat(3,100px);
+            background: yellow;
+        }
+        .wrap div{
+            border: 1px solid;
+        }
+        .wrap1{
+            justify-items: start;
+        }
+        .wrap2{
+            justify-items: end;
+        }
+        .wrap3{
+            justify-items: center;
+        }
+        .wrap4{
+            justify-items: stretch;
+            align-items: stretch;
+        }
+        .wrap5{
+            align-items: start;
+        }
+        .wrap6{
+            align-items: end;
+        }
+        .wrap7{
+            align-items: center;
+        }
+        .wrap8{
+            place-items: center center;
+        }
+        .wrap9{
+            /* 水平居右，垂直居中 */
+            place-items: center end;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3*3网格布局 -->
+    <div class="wrap wrap1"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap2"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap3"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap4"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap5"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap6"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap7"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap8"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap9"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+</body>
+</html>

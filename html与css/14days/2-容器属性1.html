@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background: yellow;
+
+            display: flex;
+        }
+        .wrap div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 1px solid ;
+        }
+
+        .wrap1{
+            flex-direction: row;
+        }
+        .wrap2{
+            flex-direction: row-reverse;
+        }
+        .wrap3{
+            flex-direction: column;
+        }
+        .wrap4{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap wrap1"><!-- 弹性容器 -->
+        <div>box1</div><!-- 弹性子元素 -->
+        <div>box2</div><!-- 弹性子元素 -->
+        <div>box3</div><!-- 弹性子元素 -->
+    </div>
+    <hr>
+    <div class="wrap wrap2"><!-- 弹性容器 -->
+        <div>box1</div><!-- 弹性子元素 -->
+        <div>box2</div><!-- 弹性子元素 -->
+        <div>box3</div><!-- 弹性子元素 -->
+    </div>
+    <hr>
+    <div class="wrap wrap3"><!-- 弹性容器 -->
+        <div>box1</div><!-- 弹性子元素 -->
+        <div>box2</div><!-- 弹性子元素 -->
+        <div>box3</div><!-- 弹性子元素 -->
+    </div>
+    <hr>
+    <div class="wrap wrap4"><!-- 弹性容器 -->
+        <div>box1</div><!-- 弹性子元素 -->
+        <div>box2</div><!-- 弹性子元素 -->
+        <div>box3</div><!-- 弹性子元素 -->
+    </div>
+</body>
+</html>

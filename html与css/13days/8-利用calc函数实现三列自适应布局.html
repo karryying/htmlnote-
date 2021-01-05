@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .wrap{
+            background: yellow;
+            overflow: hidden;
+        }
+        .wrap .fl{
+            float: left;
+
+            width: 200px;
+            min-height: 200px;
+            background: pink;
+        }
+        .wrap .center{
+            float: left;
+
+            width: calc(100% - 200px - 300px);
+            min-height: 200px;
+            background: red;
+        }
+        .wrap .fr{
+            float: left;
+
+            width: 300px;
+            min-height: 200px;
+            background: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="fl">left</div>
+        <div class="center">内容</div>
+        <div class="fr">right</div>
+    </div>
+</body>
+</html>

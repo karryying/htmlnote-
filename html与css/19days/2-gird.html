@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 1000px;
+            height: 400px;
+            display: grid;
+            grid-template-rows: 100px 100px 200px;
+            grid-template-columns: 100px 200px 300px;
+            background: yellow;
+        }
+        .wrap div{
+            border: 1px solid;
+        }
+
+        .wrap2{
+            grid-template-rows: 100px 10% 100px;/* 10% 为容器高度的10% */
+            grid-template-columns: 100px 10% 100px;/* 10% 容器宽度的10% */
+        }
+        .wrap3{
+            grid-template-rows: 100px auto 100px;/* auto 项目高度自适应 */
+            grid-template-columns: 100px auto 100px;/* auto 项目的宽度自适应 */
+        }
+        .wrap4{
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: .1fr .1fr .1fr;
+            grid-template-columns: repeat(3,.1fr);
+        }
+        .wrap5{
+            width: 500px;
+            grid-template-rows: repeat(3,100px);
+            grid-template-columns: minmax(400px,300px) 100px 100px;
+            grid-template-columns: minmax(300px,400px) 100px 100px;
+        }
+        .wrap6{
+            grid-template-rows: [r1] 100px [r2] 200px [r3] 100px;
+            grid-template-columns: [c1] 100px [c2] 200px [c3] 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3*3网格布局 -->
+    <div class="wrap"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap2"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap3"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap4"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap5"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap6"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+</body>
+</html>

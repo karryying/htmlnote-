@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        textarea{
+            resize: none;
+        }
+        .wrap div{
+            width: 200px;
+            height: 100px;
+            border: 2px solid;
+            margin-bottom: 20px;
+        }
+        .wrap div:nth-child(1){
+            resize: both;
+            overflow: hidden;
+            overflow: scroll;
+            overflow: auto;
+            /* overflow: visible; */
+        }
+        .wrap div:nth-child(2){
+            resize:vertical;
+            overflow: hidden;
+        }
+        .wrap div:nth-child(3){
+            resize: horizontal;
+            overflow: scroll;
+        }
+        .wrap2{
+            overflow: hidden;
+        }
+        .wrap2 div{
+            float: left;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            border: 5px solid ;
+            margin: 20px;
+        }
+        .wrap2 div:nth-child(1){
+            box-sizing: content-box;
+        }
+        .wrap2 div:nth-child(2){
+            box-sizing: border-box;
+        }
+
+        .wrap3{
+            width: 100%;
+            height: 100px;
+            background: yellow;
+            padding-left: 20px;
+
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <textarea></textarea>
+    <div class="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrap2">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrap3">文字内容</div>
+</body>
+</html>

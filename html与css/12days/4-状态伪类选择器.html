@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:checked{
+            background: yellow;
+        }
+        input:disabled{
+            background: red;
+        }
+        input:enabled{
+            background: violet;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <ul>
+            <li>
+                <input type="radio" name="sex" checked> 男
+                <input type="radio" name="sex"> 女
+            </li>
+            <li>
+                <input type="text" placeholder="请输入用户名" disabled>
+                <input type="text" placeholder="请输入用户名">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

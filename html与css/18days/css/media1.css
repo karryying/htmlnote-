@@ -1,0 +1,17 @@
+@charset "utf-8";
+.txt{
+    font-size: 100px;
+    font-weight: bold;
+    color: red;
+}
+
+@media screen and (orientation:landscape){
+    body{
+        background: orange;
+    }
+}
+@media screen and (orientation: portrait){
+    body{
+        background: lightblue;
+    }
+}

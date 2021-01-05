@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background: yellow;
+        }
+        .wrap div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-bottom: 10px;
+        }
+        .wrap:hover div{
+            width: 1000px;
+            background: tomato;
+        }
+
+        .wrap div:nth-child(2){
+            transition-property: width;/* 参与过渡的属性名称 */
+            transition-duration: 2s;/* s秒  ms毫秒   1s = 1000ms  过渡效果的执行时间*/
+        }
+        .wrap div:nth-child(3){
+            transition-property: width,background;
+            transition-duration: 2s;
+            transition-timing-function: ease;/* 默认值 平滑过渡 */
+            transition-timing-function: ease-in;/* 加速 */
+            transition-timing-function: ease-out;/* 加速 */
+            transition-timing-function: ease-in-out;/* 加速 */
+            transition-timing-function: linear;/* 匀速 */
+        }
+        .wrap div:nth-child(4){
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 2s;/* 延迟时间 */
+        }
+        .wrap div:nth-child(5){
+            transition: width 2s linear 2s;
+            transition: all 2s linear 2s;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <!-- <header>内容1</header> -->
+        <!-- <header>内容2</header> -->
+    </div>
+    <script>
+        // 创建一个新的元素header
+        var ele = document.createElement("header");
+        var ele2 = document.createElement("header");
+        ele.innerHTML = "内容1";
+        ele2.innerHTML = "内容2";
+
+        // 找父元素#box
+        var oBox = document.getElementById('box');
+
+        //创建的新元素追加到父元素中
+        oBox.appendChild(ele);
+        oBox.appendChild(ele2);
+
+    </script>
+</body>
+</html>

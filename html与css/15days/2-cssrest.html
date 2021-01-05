@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .InCon{
+            color: blue;/* 用户输入内容的样式 */
+        }
+        input::-webkit-input-placeholder{
+            color: #333;/* 默认样式 */
+        }
+        input:focus::-webkit-input-placeholder{
+            color: #f00;/* 获取焦点后的样式 */
+        }
+        .txt1,
+        .txt2{
+            font-size: 12px;
+        }
+        .txt2{
+            /* font-size: 5px; */
+        }
+        .txt2{
+            transform: scale(.7);
+        }
+    </style>
+</head>
+<body>
+    <input class="InCon" type="text" placeholder="请输入用户名">
+
+    <p class="txt1"><span>内容1</span></p>
+    <p class="txt2"><span>内容2</span></p>
+</body>
+</html>

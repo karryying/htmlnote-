@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow: auto;
+            background: yellow;
+        }
+        .wrap div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 100px 0 0 100px;
+
+            transition: transform 1s;/* 过渡属性 */
+        }
+       
+        .wrap:hover div:nth-child(1){
+            transform: skew(30deg,0deg);
+            transform: skewX(30deg);
+        }
+        .wrap:hover div:nth-child(2){
+            transform: skew(0deg,30deg);
+            transform: skewY(30deg);
+        }
+        .wrap:hover div:nth-child(3){
+            transform: skew(-30deg,0);
+        }
+        .wrap:hover div:nth-child(4){
+            transform: skew(0,-30deg);
+        }
+        .wrap:hover div:nth-child(5){
+            transform: skew(30deg, 30deg);
+        }
+        .wrap:hover div:nth-child(6){
+            transform: skew(30deg);/* 沿着水平方向倾斜 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+        <div>box10</div>
+    </div>
+</body>
+</html>

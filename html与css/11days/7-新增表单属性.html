@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" autocomplete="off">
+        <div><input type="text" placeholder="请输入用户名" name="user"></div>
+
+        <div><input type="text" placeholder="请输入昵称" name="userName" autocomplete="on"></div>
+
+        <div><input type="text" placeholder="请输入昵称" name="userName" autofocus></div>
+
+        hr
+        <div>
+            <input type="text" required>
+            <input type="text" value="请输入内容" required>
+        </div>
+        <div>
+            <input type="text" name="content" placeholder="请输入5位字母数字" pattern="[0-9a-zA-Z]{5}">
+        </div>
+
+        <div>
+            <input type="file" multiple>
+        </div>
+        <hr>
+        <input type="submit">
+    </form>
+
+    <form action="#" id="wrap">
+        <div><input type="text" placeholder="请输入用户名" name="user"></div>
+    </form>
+    <div><input type="submit" form="wrap"></div>
+    <div><input type="text" name="user2" form="wrap"></div>
+</body>
+</html>

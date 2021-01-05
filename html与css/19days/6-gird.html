@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 1000px;
+            height: 400px;
+            display: grid;
+            grid-template-rows: repeat(3,100px);
+            grid-template-columns: repeat(3,100px);
+            background: yellow;
+        }
+        .wrap div{
+            border: 1px solid;
+        }
+        .wrap1{
+            justify-content: start;
+            align-content: start;
+        }
+        .wrap2{
+            justify-content: end;
+            align-content: end;
+        }
+        .wrap3{
+            justify-content: center;
+            align-content: center;
+        }
+        .wrap4{
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        .wrap5{
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .wrap6{
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+        .wrap7{
+            place-content: center center;
+        }
+        .wrap8{
+            /* 水平居中，垂直平均分配间距 */
+            place-content: space-evenly center ;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3*3网格布局 -->
+    <div class="wrap wrap1"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap2"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap3"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap4"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap5"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap6"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap7"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap8"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+    <hr>
+    <div class="wrap wrap9"><!-- 容器 -->
+        <div>box1</div><!-- 项目 ，只能是容器的第一级子元素，它的孙子元素无效-->
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+    </div>
+</body>
+</html>

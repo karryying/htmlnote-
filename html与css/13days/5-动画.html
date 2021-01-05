@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            float: left;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+        .box div{
+            width: 40px;
+            height: 40px;
+            background: #f00;
+            border-radius: 50%;
+
+            position: absolute;
+            /* left: 0; */
+            /* top: 0; */
+            left: 100px;
+            top: 0;
+        }
+        .box1 div{
+            /* 第二步引用帧动画 */
+            animation: run 10s;
+            animation: run 5s 2;/* 2表示执行次数 */
+            animation: run 5s infinite;/* infinite表示无限循环 */
+            animation: run 5s 2s;/* 2s表示延迟时间 */
+            animation: run 5s ease;
+            animation: run 5s ease-in;
+            animation: run 5s ease-out;
+            animation: run 5s ease-in-out;
+            animation: run 5s linear;
+
+            animation: run 5s normal;
+            animation: run 5s infinite alternate;
+            animation: run 5s infinite reverse;
+            animation: run 5s infinite alternate-reverse;
+        }
+        .box2 div{
+            animation: run 5s infinite; 
+            animation: change 5s;
+            animation: change 3s both;
+            animation: change 3s forwards;
+            animation: change 3s backwards;
+        }
+
+        /* 第一步：定义帧动画 */
+        @keyframes run {
+            0%{
+                left: 0;
+                top: 0;
+            }
+            25%{
+                left: 360px;
+                top: 0;
+            }
+            50%{
+                left: 360px;
+                top: 360px;
+            }
+            75%{
+                left: 0;
+                top: 360px;
+            }
+            100%{
+                left: 0;
+                top: 0;
+            }
+        }
+        @keyframes change {
+            from{
+                left: 100px;
+                top: 0;
+            }
+            to{
+                left: 360px;
+                top: 360px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <div></div>
+    </div>
+    <div class="box box2">
+        <div></div>
+    </div>
+</body>
+</html>

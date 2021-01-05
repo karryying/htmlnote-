@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class]{/* 有class属性的div元素 */
+            height: 100px;
+            background: lightblue;
+        }
+        div[class=box]{/* 有class属性，并且属性值为box的div元素 */
+            height: 100px;
+            background: pink;
+        }
+        div[class~=box]{/* 有class属性，并且属性值的词列表中包含box的div元素 */
+            height: 100px;
+            background: red;
+        }
+
+        div[class^=box]{
+            height: 100px;
+            background: #f0f;
+        }
+        div[class$=box]{
+            height: 100px;
+            background: lightgreen;
+        }
+        div[class*=box]{
+            height: 200px;
+            background: pink;
+            border-bottom: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">.box</div> -->
+    <!-- <div id="box">#box</div> -->
+    <!-- <div class="box box3">.box.box3</div> -->
+    <!-- <p class="box">.box</p> -->
+    <hr>
+
+    <div class="boxbox4">.boxbox4</div>
+    <div class="box boxbox4">.box .boxbox4</div>
+    <div class="bo boxbox box">.bo .boxbox .box</div>
+    <div class="bo boxbox box6box">.bo .boxbox .box6box</div>
+</body>
+</html>

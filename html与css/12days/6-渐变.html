@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .box{
+            overflow: hidden;
+        }
+        .box div{
+            float: left;
+            width: 300px;
+            height: 200px;
+            border: 2px solid;
+            margin: 0 0 10px 10px;
+        }
+        .box div:nth-child(1){
+            background-image: linear-gradient(0deg, red, yellow);
+        }
+        .box div:nth-child(2){
+            background-image:linear-gradient(45deg,#f00, #ff0);
+        }
+        .box div:nth-child(3){
+            background-image: linear-gradient(0deg, rgb(255,0,0) 10%, rgb(255,255,0) 70%);
+        }
+        .box div:nth-child(4){
+            background-image: -webkit-linear-gradient(bottom, red,#ff0);
+            background-image: linear-gradient(bottom, red,#ff0);
+        }
+        .box div:nth-child(5){
+            background-image: -webkit-linear-gradient(left bottom, rgb(255,0,0), #ff0);
+            background-image: linear-gradient(left bottom, rgb(255,0,0), #ff0);
+        }
+        .box div:nth-child(6){
+            background-image: linear-gradient(0deg, red 0%, red 20%, yellow 20%, yellow 40%);
+        }
+        .box div:nth-child(7){
+            background-image: repeating-linear-gradient(0deg, red 0%, red 20%,yellow 20%, yellow 40%);
+        }
+        .box div:nth-child(8){
+            width: 200px;
+            background-image: linear-gradient(45deg, #bbd534 0%, #bbd534 50%, #abcc01 50%, #abcc01 100%);
+        }
+        .box div:nth-child(9){
+            width: 200px;
+            background-image: linear-gradient(45deg, #bbd534 0%, #bbd534 50%, #abcc01 50%, #abcc01 100%);
+            background-size: 50px 50px;
+        }
+        .box div:nth-child(10){
+            width: 200px;
+            background-image: linear-gradient(180deg, rgba(255,0,0,.3) 0%, rgba(255,0,0,.3) 50%, rgba(255,0,0,0) 50%, rgba(255,0,0,0) 100%),
+            linear-gradient(90deg,rgba(255,0,0,.3) 0%, rgba(255,0,0,.3) 50%, rgba(255,0,0,0) 50%, rgba(255,0,0,0) 100%);
+        }
+        .box div:nth-child(11){
+            width: 200px;
+            background-image: linear-gradient(180deg, rgba(255,0,0,.3) 0%, rgba(255,0,0,.3) 50%, rgba(255,0,0,0) 50%, rgba(255,0,0,0) 100%),
+            linear-gradient(90deg,rgba(255,0,0,.3) 0%, rgba(255,0,0,.3) 50%, rgba(255,0,0,0) 50%, rgba(255,0,0,0) 100%);
+            background-size: 50px 50px;
+        }
+
+        .box div:nth-child(12){
+            background-image: radial-gradient(red,yellow);
+        }
+        .box div:nth-child(13){
+            background-image: -webkit-radial-gradient(left center, red,yellow);
+            background-image: radial-gradient(left center, red,yellow);
+        }
+        .box div:nth-child(14){
+            background-image: radial-gradient(red 10%, #ff0 50%);
+        }
+        .box div:nth-child(15){
+            width: 200px;
+            background-image: radial-gradient(red 10%, #ff0 50%);
+        }
+        .box div:nth-child(16){
+            background-image: radial-gradient(circle,red 10%, #ff0 50%);
+        }
+        .box div:nth-child(17){
+            width: 200px;
+            background-image: radial-gradient(ellipse,red 10%, #ff0 50%);
+        }
+        .box div:nth-child(18){
+            background-image: repeating-radial-gradient(red 5%, yellow 5%, pink 7%, lightgreen 20%, yellow 30%)
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

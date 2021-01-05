@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt{
+            display: none;
+            font: bold 100px/1.5 "微软雅黑";
+            color: red;
+            text-align: center;
+        }
+
+        @media print{
+            .txt{
+                display: block;
+            }
+        }
+        @media  all and (max-width: 1000px){
+            body{
+                background: pink;
+            }
+        }
+        @media all and (max-width: 768px){
+            body{
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="txt">你看不见我</p>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow: auto;
+            background: yellow;
+        }
+        .wrap div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 100px 0 0 100px;
+
+            transition: transform 1s;/* 过渡属性 */
+        }
+       
+        .wrap:hover div:nth-child(1){
+            transform: rotate(180deg);
+        }
+        .wrap:hover div:nth-child(2){
+            transform: rotate(-180deg);
+        }
+
+        .wrap:hover div:nth-child(3){
+            transform: scale(2,1);
+            transform: scale(0.5,1);
+            transform: scaleX(1.5);
+        }
+        .wrap:hover div:nth-child(4){
+            transform: scale(1,2);
+            transform: scale(1,.5);
+            transform: scaleY(0.2);
+        }
+        .wrap:hover div:nth-child(5){
+            transform: scale(2,2);
+        }
+        .wrap:hover div:nth-child(6){
+            transform: scale(0,0);
+        }
+        .wrap:hover div:nth-child(7){
+            transform: scale(2);/* 等比例缩放 */
+            transform: scale(-2);/* 先翻转后缩放 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <div>box8</div>
+        <div>box9</div>
+        <div>box10</div>
+    </div>
+</body>
+</html>

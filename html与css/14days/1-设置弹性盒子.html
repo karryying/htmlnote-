@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background: yellow;
+
+            display: flex;
+        }
+        .wrap div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: 1px solid ;
+        }
+
+        .wrap2{
+            background: pink;
+
+            display: flex;
+            display: inline-flex;
+        }
+        .wrap2 span{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap"><!-- 弹性容器 -->
+        <div>box1</div><!-- 弹性子元素 -->
+        <div>box2</div><!-- 弹性子元素 -->
+        <div>box3</div><!-- 弹性子元素 -->
+    </div>
+    <div class="wrap2">
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+    </div>
+</body>
+</html>

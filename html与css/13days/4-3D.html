@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow: auto;
+            background: yellow;
+        }
+        .wrap div{
+            float: left;
+            width: 200px;
+            height: 200px;
+            border: 2px solid;
+            margin: 20px 50px 0 0;
+
+           transform-style: preserve-3d;/* 创建3d空间 */
+           perspective: 600px;/* 景深 */
+        }
+        .wrap div>img{
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+        }
+       
+       .wrap div:nth-child(1):hover img{
+           transform: translateX(50px);
+       }
+       .wrap div:nth-child(2):hover img{
+           transform: translateY(-50px);
+       }
+       .wrap div:nth-child(3):hover img{
+           transform: translateZ(50px);
+           transform: translateZ(-50px);
+       }
+       .wrap div:nth-child(4):hover img{
+           transform: translate3d(50px,-50px, -50px);
+       }
+
+       .wrap div:nth-child(5):hover img{
+            transform: rotateX(30deg);
+       }
+       .wrap div:nth-child(6):hover img{
+           transform: rotateY(-30deg);
+           transform: rotateY(30deg);
+       }
+       .wrap div:nth-child(7):hover img{
+           transform: rotate(-30deg);
+       }
+       .wrap div:nth-child(8):hover img{
+           transform: rotate3d(1,0,0,30deg);
+           transform: rotate3d(0,1,0,30deg);
+           transform: rotate3d(0,0,1,30deg);
+           transform: rotate3d(1,1,1,30deg);
+       }
+
+       .wrap div:nth-child(9):hover img{
+           transform: scaleX(1.5);
+       }
+       .wrap div:nth-child(10):hover img{
+           transform: scaleY(0.5);
+       }
+       .wrap div:nth-child(11):hover img{
+           transform: scaleZ(1.5);
+       }
+       .wrap div:nth-child(12):hover img{
+           transform: scale3d(1.5,0.5,1.5);
+       }
+
+       .wrap div:nth-child(13):hover img{
+           transform: scale(0)  rotate(360deg);
+       }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div><img src="images/1.jpg" alt="pic"></div>
+        <div><img src="images/1.jpg" alt="pic"></div>
+        <div><img src="images/1.jpg" alt="pic"></div>
+        <div><img src="images/1.jpg" alt="pic"></div>
+        <div><img src="images/2.jpg" alt="pic"></div>
+        <div><img src="images/2.jpg" alt="pic"></div>
+        <div><img src="images/2.jpg" alt="pic"></div>
+        <div><img src="images/2.jpg" alt="pic"></div>
+        <div><img src="images/3.jpg" alt="pic"></div>
+        <div><img src="images/3.jpg" alt="pic"></div>
+        <div><img src="images/3.jpg" alt="pic"></div>
+        <div><img src="images/3.jpg" alt="pic"></div>
+        <div><img src="images/1.jpg" alt="pic"></div>
+    </div>
+</body>
+</html>

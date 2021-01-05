@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>文档结构标签</title>
+	<style>
+		.fl {
+			float: left;
+		}
+
+		.fr {
+			float: right;
+		}
+
+		.nav {
+			height: 30px;
+			background: #eee;
+			line-height: 30px;
+			text-align: center
+		}
+
+		.nav a {
+			padding: 0 20px;
+		}
+
+		.box {
+			margin-top: 20px;
+			overflow: hidden
+		}
+
+		.right {
+			width: 88%;
+		}
+
+		.footer {
+			background: #eee;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<h1 style="text-align:center">文章列表</h1>
+	</header>
+	<nav class="nav">
+		<a href="#">首页</a>
+		<a href="#">列表</a>
+		<a href="#">关于我们</a>
+		<a href="#">联系我们</a>
+	</nav>
+	<article class="box">
+		<!--左边列表-->
+		<aside class="fl">
+			<a href="#">标题1</a><br>
+			<a href="#">标题2</a><br>
+			<a href="#">标题3</a><br>
+			<a href="#">标题4</a><br>
+		</aside>
+		<!--右边列表-->
+		<article class="right fr">
+			<section>
+				<header class="title">
+					<h2>关于我们</h2>
+				</header>
+				<p>优就业是中公教育IT培训品牌，致力于培养面向互联网领域的高端人才，以学员就业为目的，优质就业为宗旨。培训领域覆盖互联网营销师、UI交互设计师、Web前端工程师、Java工程师、PHP工程师、SEO优化师、SEM竞价师、社会化媒体运营师等。
+				</p>
+			</section>
+			<section>
+				<header class="title">
+					<h2>职业规划</h2>
+				</header>
+				<p> 优就业职业规划测评系统，根据个人职业兴趣、能力及自我角色的认知，快速职场定位，并制定切实可行的计划。让学员都能按照自己的定位、兴趣和能力，找到适合自己的平台，以此实现自我的职场目标，创造价值。</p>
+			</section>
+			<section>
+				<header class="title">
+					<h2>就业服务</h2>
+				</header>
+				<p>学员学完培训规定内课程，中公优就业将根据学员学习情况、学员自身意愿，提供就业服务，提升求职面试技巧，增加面试成功几率，帮助学员找到理想工作。更有名企招聘双选会，
+					企业登门招聘，学员与企业面对面交流。在就业求职的路上，优就业助你一臂之力。</p>
+				<figure>
+					<img src="images/logo.jpg">
+					<figcaption>优就业logo</figcaption>
+				</figure>
+			</section>
+		</article>
+	</article>
+	<footer class="footer">转载需表明出处</footer>
+</body>
+
+</html>
