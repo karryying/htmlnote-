@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow: hidden;
+        }
+        .wrap div{
+            float: left;
+            width: 200px;
+            border: 2px solid;
+            margin-right: 10px;
+        }
+
+        .box2{
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            display: -webkit-box;/* 将元素转换为弹性伸缩盒子 */
+            -webkit-line-clamp: 2;/* 显示的文本内容的行数 */
+            -webkit-box-orient: vertical;/* 设置弹性伸缩盒中子元素的排列方式 */
+
+        }
+        .box3{
+            position: relative;
+            width: 200px;
+            height: 40px;
+            overflow: hidden;
+
+            line-height: 20px;
+        }
+        .box3::after{
+            content: "...";
+            position: absolute;
+            right: 6px;
+            bottom: 0;
+            background: #fff;
+            padding: 0 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+        <div class="box2">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+        <div class="box3">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+        
+
+    </div>
+</body>
+</html>
