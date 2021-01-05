@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow: hidden;
+        }
+        .wrap div{
+            float: left;
+            width: 200px;
+            border: 2px solid;
+            margin-right: 100px;
+        }
+
+        .box1{
+            white-space: nowrap;/* 强制不换行 */
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        .box2{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .box3{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: "ABC";
+        }
+        .box4{
+            word-wrap: break-word;/* 允许长单词或url地址内部换行 */
+            word-wrap: normal;/* 默认值，只在断字点换行 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">内容内容内容内容内容内容内容内容内容内容</div>
+        <div class="box2">内容内容内容内容内容内容内容内容内容内容</div>
+        <div class="box3">内容内容内容内容内容内容内容内容内容内容</div>
+        <div class="box4">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+
+    </div>
+</body>
+</html>

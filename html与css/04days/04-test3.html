@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去掉自带样式 */
+        h3{
+            margin: 0;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style: none;/* 去掉列表符 */
+        }
+        a{
+            text-decoration: none; /* 去掉文本装饰线 */
+            color: #333;
+        }
+        /* 设置样式 */
+        .title{
+            font: 16px/32px "微软雅黑";
+            color: #a80000;
+
+            /* background-image: url(images/icon01.jpg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-position: 0 6px; */
+            background: url(images/icon01.jpg) no-repeat 0 6px;
+        }
+        .list{
+            /* background-image: url(images/linebg.jpg);
+            background-repeat: repeat-x; */
+            background: url(images/linebg.jpg) repeat-x;
+        }
+        .items{
+            font: 14px/24px "宋体";
+            color: #333;
+
+            /* background-image: url(images/icon03.jpg);
+            background-repeat: no-repeat;
+            background-position: left center; */
+            background: url(images/icon03.jpg) no-repeat left;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h3 class="title">本版导读</h3>
+        <ul class="list">
+            <li class="items"><a href="#">逃缴停车费</a></li>
+            <li class="items"><a href="#">逃缴停车费</a></li>
+            <li class="items"><a href="#">逃缴停车费</a></li>
+            <li class="items"><a href="#">逃缴停车费</a></li>
+            <li class="items"><a href="#">逃缴停车费</a></li>
+        </ul>
+    </div>
+</body>
+</html>

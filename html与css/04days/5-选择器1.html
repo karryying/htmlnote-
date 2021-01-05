@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代和子代 */
+        .wrap h3{
+            color: red;
+        }
+        .wrap>h3{
+            color: blue;
+        }
+        .wrap>div>h3{
+            color: green;
+        }
+
+
+        .wrap2>div{
+            width: 300px;
+            height: 200px;
+            background: yellow;
+        }
+        .wrap2>div>p{
+            color: #f0f;
+        }
+        .wrap2>div h3{
+            color: red;
+        }
+
+        /* 群组 */
+        .wrap,
+        .wrap2{
+            background: yellowgreen;
+        }
+
+        .txt{
+            /* font-size: 30px; */
+        }
+        p.txt{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 后代和子代 -->
+    <div class="wrap">
+        <h3 class="txt">title h3</h3>
+        <div>
+            <h3>title div-h3</h3>
+        </div>
+    </div>
+
+    <div class="wrap2">
+        <h3>title h3</h3>
+        <div><!-- div 300*200 background-color:yellow -->
+            <p class="txt">content div-p  color: #f0f</p>
+            <div>
+                <h3>title div-div-h3  color:red</h3>
+                <p>content div-div-p</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

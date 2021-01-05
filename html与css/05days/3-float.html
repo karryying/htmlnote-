@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            /* height: 200px; */
+            /* float: left; */
+            overflow: hidden;
+            overflow: scroll;
+            overflow: auto;
+            /* overflow: visible; */
+
+            background: yellow;
+        }
+        .wrap .left{
+            width: 300px;
+            height: 200px;
+            background: red;
+
+            float: left;
+        }
+        .wrap .right{
+            width: 200px;
+            height: 100px;
+            background: pink;
+
+            float: right;
+        }
+
+        .wrap2{
+            background: pink;
+        }
+        .wrap2 .left{
+            width: 300px;
+            height: 200px;
+            background: red;
+
+            float: left;
+        }
+        .wrap2 .right{
+            width: 200px;
+            height: 100px;
+            background: tomato;
+
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+
+        .wrap3{
+            background: lightblue;
+        }
+        .wrap3 div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            float: left;
+        }
+        .wrap3 .right{
+            float: right;
+        }
+
+        .clearfix{
+            *zoom: 1;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left">left 300*200</div>
+        <div class="right"> 200*100</div>
+    </div>
+    <hr>
+    <div class="wrap2">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="clear"></div>
+    </div>
+    <hr>
+    <div class="wrap3 clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

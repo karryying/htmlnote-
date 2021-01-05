@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arrowDown{
+            width: 10px;
+            height: 5px;
+            background: #f5f5f5;
+
+            position: relative;
+            overflow: hidden;
+        }
+        .arrowDown i{/* 向下的两个三角 */
+            width: 0;
+            height: 0;
+
+            font-size: 0;
+            line-height: 0;
+
+            border-top: 5px solid #f5f5f5;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+
+            position: absolute;
+            left: 0;
+            top: -1px;
+        }
+        .arrowDown .arr{
+            border-top-color:#d4d4d4;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 向下箭头 -->
+    <div class="arrowDown">
+        <i class="arr"></i>
+        <i></i>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去掉自带样式 */
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        /* public style */
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .clearfix{
+            *zoom:1;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* 设置样式 */
+        .header{
+            width: 1277px;
+            margin: 0 auto;
+        }
+        .header .logo{
+            width: 44px;
+            height: 44px;
+            margin-top: 13px;
+        }
+        .header .nav{
+            /* margin-left: 44px;
+            margin-top: 3px; */
+            margin: 3px 0 0 44px;
+        }
+        .header .nav li{
+            float: left;
+            margin-right: 28px;
+        }
+        .header .nav li a{
+            display: block;
+            font: 14px/64px "微软雅黑";
+            color: #333;
+        }
+        .header .right{
+            margin-top: 3px;
+        }
+        .header .login{
+            font: 14px/64px "微软雅黑";
+            color: #333;
+        }
+        .header .login img{
+            vertical-align: middle;
+        }
+        .header .lang{
+            margin-top: 26px;
+        }
+        .header .lang img{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="header clearfix">
+        <a href="#" class="fl logo"><img src="images/task5_03.jpg" alt="logo"></a>
+        <ul class="nav fl">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">首页</a></li>
+        </ul>
+        <div class="right fr">
+            <div class="login fl"><img src="images/task5_06.jpg" alt="login">快速登录/注册</div>
+            <a href="#" class="lang fl"><img src="images/task5_09.jpg" alt="lang"></a>
+        </div>
+    </div>
+</body>
+</html>

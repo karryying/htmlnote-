@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt a:link{
+            color: lightgreen;
+        }
+        .txt a:visited{
+            color: red;
+        }
+        .txt a:hover{
+            color: blue;
+        }
+        .txt a:active{
+            color: orange;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        /* 鼠标悬停到.box盒子上，让.box盒子背景颜色变为绿色 */
+        .box:hover{
+            background: lightgreen;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+        .box2 p{
+            width: 100px;
+            height: 100px;
+            background: orange;
+        }
+        /* 鼠标悬停到.box2盒子上，让.box2中的子盒p背景颜色变为red */
+        .box2:hover p{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="txt"><a href="#">链接文字</a></p>
+    <div class="box"></div>
+    <!-- 鼠标悬停到.box2盒子上，让.box2中的子盒p背景颜色变为red -->
+    <div class="box2">
+        <p></p>
+    </div>
+</body>
+</html>

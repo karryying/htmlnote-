@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            border-bottom: 1px solid red;
+        }
+        .red::before{
+            content: "小红：";
+            color: red;
+        }
+        .blue{
+            text-align: right;
+            border-bottom: 1px solid blue;
+        }
+        .blue::after{
+            content: "：小蓝";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="red">今天天气不太好。</p>
+    <p class="blue">怎么不太好？</p>
+    <p class="red">早上看到天空同时出现两种天气预兆。</p>
+    <p class="blue">没有看到。</p>
+</body>
+</html>

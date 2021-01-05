@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            height: 100px;
+            border-bottom: 1px solid #000;
+        }
+        .wrap img{
+            height: 100px;
+        }
+        .wrap2 img{
+            vertical-align: top;
+        }
+        .wrap3 img{
+            vertical-align: bottom;
+        }
+        .wrap4 img{
+            vertical-align: middle;
+        }
+        .wrap5 img{
+            vertical-align: baseline;
+        }
+        .txt1 span{
+            vertical-align: super;
+        }
+        .txt2 span{
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap wrap1">
+        <img src="images/1_3.jpg" alt="pic"> vertical-align: 
+    </div>
+    <div class="wrap wrap2">
+        <img src="images/1_3.jpg" alt="pic"> vertical-align: top
+    </div>
+    <div class="wrap wrap3">
+        <img src="images/1_3.jpg" alt="pic"> vertical-align: bottom;
+    </div>
+    <div class="wrap wrap4">
+        <img src="images/1_3.jpg" alt="pic"> vertical-align: middle
+    </div>
+    <div class="wrap wrap5">
+        <img src="images/1_3.jpg" alt="pic"> vertical-align: baseline
+    </div>
+    <p>3<sup>2</sup></p>
+    <p class="txt1">3<span>2</span></p>
+    <p>H<sub>2</sub>O</p>
+    <p class="txt2">H<span>2</span>O</p>
+</body>
+</html>

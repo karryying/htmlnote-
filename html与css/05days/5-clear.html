@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background: yellow;
+        }
+        .wrap .left,
+        .wrap .right{
+            width: 200px;
+            height: 200px;
+            background: red;
+            float: left;
+        }
+        .wrap .right{
+            float: right;
+        }
+        .clear{
+            clear: left;/* 清除float: left带来的不占位影响 */
+            clear: right;/* 清除float: right带来的不占位影响 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

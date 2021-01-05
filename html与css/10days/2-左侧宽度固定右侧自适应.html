@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap>div,
+        .wrap .right .sub{
+            min-height: 200px;
+        }
+        .left{
+            width: 300px;
+            background: pink;
+
+            position: absolute;
+        }
+        .right{
+            width: 100%;
+            background: yellow;
+        }
+        .right .sub{
+            background: red;
+            padding-left: 300px;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left">左侧</div>
+        <div class="right">
+            <div class="sub">内容内容内容内容内容内容</div>
+        </div>
+    </div>
+</body>
+</html>

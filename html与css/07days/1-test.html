@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去掉自带样式 */
+        ul,p,h3,h4{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            vertical-align: top;
+        }
+        /* public style */
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .clearfix{
+            *zoom: 1;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* 设置样式 */
+        body{
+            background: #f6f7f9;
+        }
+        .wrap{
+            width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .wrap li{
+            width: 224px;
+            background: #fff;
+            border-top: 1px solid blue;
+            border-right: 1px solid blue;
+
+            position: relative;
+            float: left;
+            margin-top: -1px;/* 向上移动1px */
+        }
+        .wrap li .con{
+            padding-top: 23px;
+            margin-left: 40px;
+        }
+        .wrap li .con .pic{
+            margin: 0 0 12px 0;
+        }
+        .wrap li .con p{
+            margin-left: 32px;
+            font: 16px/54px "微软雅黑";
+            color: #000;
+        }
+        .wrap li .coverCon{
+            position: absolute;
+            left: 0;
+            top: 95px;
+            width: 100%;
+            background: rgba(240,93,0,.8);
+            text-align: center;
+
+            height: 95px;
+
+            transition: all 1s;
+        }
+        .wrap li .coverCon p{}
+        .wrap li .coverCon a{}
+        .wrap li:hover .coverCon{
+            top: 0;
+        }
+
+
+        /* 模块二 */
+        .wrap2{}
+        .wrap2 h3{
+            font: 30px/87px "微软雅黑";
+            color: #333;
+            text-align: center;
+        }
+        .wrap2 .con{
+            background: #373d41;
+        }
+        .wrap2 .con .inner{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .wrap2 .con .items{
+            width: 250px;
+            height: 420px;
+            background: url(images/1.jpg) no-repeat;
+
+            position: relative;
+            color: #fff;
+
+        }
+        .wrap2 .con .items .mask{
+            width: 100%;
+            height: 100%;
+            background: url(images/mask.png) no-repeat;
+            opacity: .8;
+            display: none;
+        }
+        .wrap2 .con .items .txtCon{
+            position: absolute;
+            left: 0;
+            top: 120px;
+            width: 100%;
+            text-align: center;
+        }
+        .wrap2 .con .items:hover .txtCon{
+            top: 100px;
+        }
+        .wrap2 .con .items .txtCon a{
+            display: none;
+        }
+        .wrap2 .con .items:hover .mask{
+            display: block;
+        }
+        .wrap2 .con .items:hover .txtCon a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 模块一： -->
+    <ul class="wrap clearfix">
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+        <li>
+            <div class="con clearfix">
+                <div class="pic fl"><img src="images/jiuye.png" alt="pic"></div>
+                <p class="fl">推荐就业</p>
+            </div>
+            <div class="coverCon">
+                <p>一地学习全国就业</p>
+                <a href="#">查看详情</a>
+            </div>
+        </li>
+    </ul>
+
+    <!-- 模块二： -->
+    <div class="wrap2">
+        <h3>品牌优势</h3>
+        <div class="con">
+            <div class="inner clearfix">
+                <!-- 内容1 -->
+                <div class="items fl">
+                    <div class="mask"></div><!-- 遮罩层 -->
+                    <div class="txtCon">
+                        <div class="pic"><img src="images/icons1.png" alt="pic"></div>
+                        <h4>专业深度指导</h4>
+                        <p>哥伦比亚资深留美专家</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+                <!-- 内容2 -->
+                <div class="items fl">
+                    <div class="mask"></div><!-- 遮罩层 -->
+                    <div class="txtCon">
+                        <div class="pic"><img src="images/icons1.png" alt="pic"></div>
+                        <h4>专业深度指导</h4>
+                        <p>哥伦比亚资深留美专家</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+                <!-- 内容3 -->
+                <div class="items fl">
+                    <div class="mask"></div><!-- 遮罩层 -->
+                    <div class="txtCon">
+                        <div class="pic"><img src="images/icons1.png" alt="pic"></div>
+                        <h4>专业深度指导</h4>
+                        <p>哥伦比亚资深留美专家</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+                <!-- 内容4 -->
+                <div class="items fl">
+                    <div class="mask"></div><!-- 遮罩层 -->
+                    <div class="txtCon">
+                        <div class="pic"><img src="images/icons1.png" alt="pic"></div>
+                        <h4>专业深度指导</h4>
+                        <p>哥伦比亚资深留美专家</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box1 img{
+            border: none;
+        }
+        .box2{
+            height: 200px;
+            background: url(images/1_3.jpg)no-repeat left top;
+            background: url(images/1_3.jpg) no-repeat left top;
+
+            cursor: pointer;
+        }
+        .box3{
+            height: 200px;
+            background: pink;
+            cursor: auto;
+            cursor: default;
+            cursor: text;
+            cursor: wait;
+            cursor: move;
+            cursor: help;
+            cursor: crosshair;
+        }
+
+        .box4{
+            height: 10px;
+            background: red;
+
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .box5{
+            height: 120px;
+        }
+        .box5 div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* margin-left: 20px; */
+            /* float: left; */
+            margin-right: 20px;
+            float: right;
+
+            _display: inline;
+        }
+
+        .box6{
+            width: 300px;
+            background: yellow;
+            height: 300px;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+        .box6 div{
+            position: relative;
+            width: 100px;
+            height: 500px;
+            background: red;
+        }
+        .box7{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+
+            *display: inline;
+            *zoom: 1;
+        }
+
+        .list{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .list li{
+            height: 30px;
+            background: red;
+
+            vertical-align: top;
+            vertical-align: middle;
+            vertical-align: bottom;
+        }
+        .list span{
+            float: left;
+        }
+        .list em{float: left;}
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <a href="#"><img src="images/1_3.jpg" alt="pic"></a>
+    </div>
+    <div class="box2"></div>
+    <div class="box3">光标形状</div>
+
+    <hr>
+    <div class="box4"></div>
+    <div class="box5">
+        <div>内容1</div>
+        <div>内容2</div>
+        <div>内容3</div>
+    </div>
+    <div class="box6">
+        <div></div>
+    </div>
+    <hr>
+    <div class="box7"></div>
+    <div class="box7"></div>
+
+    <hr>
+    <ul class="list">
+        <li><span>内容1</span><em>内容2</em></li>
+        <li><span>内容1</span><em>内容2</em></li>
+        <li><span>内容1</span><em>内容2</em></li>
+    </ul>
+</body>
+</html>

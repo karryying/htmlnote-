@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap div{/* 权值10 + 1 = 11 */
+            height: 300px;
+            background: pink;
+        }
+        .box{/* 权值10 */
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        div{/* 权值1 */
+            background: orange !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box" style="background: blue;"></div>
+    </div>
+</body>
+</html>

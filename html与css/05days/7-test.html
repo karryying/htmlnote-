@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去掉自带样式 */
+        h3,
+        h4,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 设置样式 */
+        .exam {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .exam h3 {
+            font: bold 24px/43px "微软雅黑";
+            color: #ef2d36;
+
+            border-bottom: 2px solid #c1c1c1;
+        }
+
+        .exam .items {
+            width: 310px;
+
+            float: left;
+        }
+        
+        .exam .items h4 {
+            font: 16px/46px "微软雅黑";
+            color: #222;
+        }
+        .exam .items .con{
+            padding-top: 10px;
+        }
+        .exam .items li {
+            background: url(images/listBg.jpg) no-repeat left center;
+            padding-left: 10px;
+            /* text-indent: 10px; */
+        }
+
+        .exam .items li a {
+            display: block;
+            font: 12px/32px "宋体";
+            color: #333;
+        }
+
+        .exam .items li a span {
+            color: #999;
+            float: right;
+        }
+
+        .maRi30 {
+            margin-right: 30px;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .exam2 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .exam2 h3 {
+            font: bold 24px/43px "微软雅黑";
+            color: #ef2d36;
+
+            border-bottom: 2px solid #c1c1c1;
+        }
+
+        .exam2 .items {
+            width: 310px;
+
+            float: left;
+        }
+
+        .exam2 .items h4 {
+            font: 16px/46px "微软雅黑";
+            color: #222;
+        }
+        .exam2 .con{
+            margin-top: 10px;
+        }
+        .exam2 .items li {
+            background: url(images/listBg.jpg) no-repeat left center;
+            background-color: pink;
+            text-indent: 10px;
+
+            overflow: hidden;
+        }
+        .exam2 .items li a {
+            display: block;
+            font: 12px/32px "宋体";
+            color: #333;
+
+            float: left;
+        }
+
+        .exam2 .items li  span {
+            font: 12px/32px "宋体";
+            color: #999;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="exam">
+        <h3>考试题库</h3>
+        <div class="con clearfix">
+            <!-- 项1 -->
+            <div class="items maRi30">
+                <h4>真题</h4>
+                <ul>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                </ul>
+            </div>
+            <!-- 项2 -->
+            <div class="items maRi30">
+                <h4>真题</h4>
+                <ul>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                </ul>
+            </div>
+
+            <!-- 项3 -->
+            <div class="items">
+                <h4>真题</h4>
+                <ul>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                    <li><a href="#">16公共基础知识：历史-占田制<span>08-04</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="exam2">
+        <h3>考试题库</h3>
+        <div class="con clearfix">
+            <!-- 项1 -->
+            <div class="items maRi30">
+                <h4>真题</h4>
+                <ul>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                </ul>
+            </div>
+            <!-- 项2 -->
+            <div class="items maRi30">
+                <h4>真题</h4>
+                <ul>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                </ul>
+            </div>
+
+            <!-- 项3 -->
+            <div class="items">
+                <h4>真题</h4>
+                <ul>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                    <li><a href="#">16公共基础知识：历史-占田制</a><span>08-04</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
